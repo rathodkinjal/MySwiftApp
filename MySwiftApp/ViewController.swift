@@ -28,8 +28,13 @@ class ViewController: UIViewController {
         print(text1.text!)
         print(text2.text!)
         
-        var sum = "Sum is: \(Double(text1.text!)! + Double(text2.text!)!)"
-        myLabel.text = sum
+        let addition = true
+        
+        if addition {
+           myLabel.text = "Sum is: \(Double(text1.text!)! + Double(text2.text!)!)"
+        } else {
+            myLabel.text = "Sum is: \(Double(text1.text!)! - Double(text2.text!)!)"
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
